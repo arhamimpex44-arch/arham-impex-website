@@ -1,1 +1,232 @@
 # arham-impex-website
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARHAM IMPEX - Custom Clearing, Forwarding, Air & Sea Freight Agent</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            text-align: center;
+            color: #fff;
+        }
+        p {
+            text-align: center;
+            font-size: 1.2em;
+            color: #f0f0f0;
+        }
+
+        /* Header */
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 2em;
+            font-weight: bold;
+            color: #ffd700;
+        }
+        .ntn {
+            font-size: 1.2em;
+            color: #fff;
+            background: #ff4500;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        /* Hero Section with Animations */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .hero p {
+            font-size: 1.5em;
+            margin-bottom: 40px;
+        }
+        .airplane, .ship {
+            position: absolute;
+            animation: move 10s linear infinite;
+        }
+        .airplane {
+            top: 20%;
+            left: -100px;
+            font-size: 3em;
+        }
+        .ship {
+            bottom: 20%;
+            right: -100px;
+            font-size: 3em;
+        }
+        @keyframes move {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(calc(100vw + 100px)); }
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 0;
+            background: rgba(255, 255, 255, 0.9);
+            margin-top: 100px;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .about, .services, .contact {
+            text-align: center;
+        }
+        .contact-details {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .contact-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            min-width: 250px;
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2em; }
+            .contact-details { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">ARHAM IMPEX</div>
+            <div class="ntn">NTN: 3064453</div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome to ARHAM IMPEX</h1>
+            <p>Your Trusted Partner in Custom Clearing, Forwarding, Air & Sea Freight for Import & Export</p>
+            <p>"Delivering Excellence Across the Globe – Where Reliability Meets Innovation."</p>
+            <p>"Seamless Logistics, Unmatched Service – Your Satisfaction is Our Destination."</p>
+            <!-- Animations -->
+            <div class="airplane">✈️</div>
+            <div class="ship">🚢</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>ARHAM IMPEX is a leading custom clearing and forwarding agent specializing in air and sea freight for import and export services. We ensure efficient, reliable, and cost-effective solutions tailored to your needs.</p>
+            <p><strong>Owner:</strong> SYED AMJAD ALI</p>
+            <p><strong>Manager:</strong> SYED ARHAM ALI</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p>We handle all aspects of logistics, from custom clearing to global freight forwarding. Trust us for timely deliveries and expert handling.</p>
+            <ul style="list-style: none; padding: 0;">
+                <li>Custom Clearing & Forwarding</li>
+                <li>Air Freight Services</li>
+                <li>Sea Freight Services</li>
+                <li>Import & Export Solutions</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Get in touch for personalized logistics solutions.</p>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <h3>SYED AMJAD ALI (Owner)</h3>
+                    <p>Contact: 0300-2261400 | 0315-1020630</p>
+                </div>
+                <div class="contact-item">
+                    <h3>SYED ARHAM ALI (Manager)</h3>
+                    <p>Contact: 0307-2206102</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Company Email</h3>
+                    <p>Email: <a href="mailto:arhamimpex44@gmail.com" style="color: #007bff; text-decoration: none;">arhamimpex44@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 ARHAM IMPEX. All Rights Reserved.</p>
+            <p>"Your Global Journey Starts Here – With Trust, Speed, and Care."</p>
+        </div>
+    </footer>
+
+    <!-- Simple JS for Smooth Scrolling (Optional) -->
+    <script>
+        // Smooth scroll to sections (if you add navigation links later)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
